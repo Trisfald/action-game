@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	explosion
+		Attributes
+			id: int
+			duration: float
+			activity: float
+			growth: float, optional (default: 0)
+		Children
+			form
+				(custom rule)
+			body
+				(custom rule)
+			motions
+				Children
+					motion
+						Fields
+							type: ExplosionMotionType
+							id: int
+-->
+<database>
+	<explosion id="0" duration="1" activity="1" growth="10">
+		<form type="CIRCLE" radius="32" hitlevel="IMPOSSIBLE"/>
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="5" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	        </defences>
+	        <immunities>
+	        </immunities>
+        </body>
+        <motions>
+        	<motion type="STANDARD" id="8"/>
+        </motions>
+	</explosion>
+</database>

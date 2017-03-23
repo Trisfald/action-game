@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="../tileset/TERRAINS.tsx"/>
+ <tileset firstgid="3" source="../tileset/tileset.tsx"/>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2cQU7DMBBFLRXEAThCFxyABSdAiDVHCBwAAScI3Jt4UVG5Y9o4tvMdv8XbRm5e7cQz39k553aNcj/xbrAXGFuP4EMLfGiBDy3woYXl43HiSmBsPWL52AuMq1fwoYXl42XiVmBsPWL5GBxzRMnHBz6qcDPxEPBs+BjxUQU/F14D3gwfPNPr+fgM+MLHqj6+A37wsaoP697jAx+ADzXwocX1xF3AEz6koP+hBT60oB+lBf0PLfChBf0oLehHaUE/SgvLx4gPKR880/EB+FDE1xitmiI+1oM9oRb40MFnsqwMFj7Wwc8NK4OFj/V8WBksfKznw8pg+ZpimC2lxljHh7X/GNxptnQvMN6tE/Pha4phtrQnH1b2PIW5a0rMx+hOs6Vb93HswL9zhutDCnPvWe+ZrJgD/84Zrg8p4COPA//OGa4PKeDjvIdLHMRy/3PBx/+/tYaDEj58BivMlraeyTqcRyrtoISP1udCyKFOV8MBPi77nbGzkko+eulHxep0c7HW8dznBHrof8TqdLn+7znXmV58lFx/cvnopR/Vio9e+lEt+eihH9WSD+s517IPq+5trcmqPnJcRwmr7p1r74GP+Vh17xx7D3ykYdW9S9drS/po/Txnjvuu5GPuNdTAhxa5HRzXrGLrRkkfrZ/nrDUnavkYEq6jxNZ8tH6e06qHL+GSd5slPsJ8RXiN0f3lRVtet2qyxMfxd0Zj+9bBkRGt6ePcvvWQF8VHHR/n9q2j6yMjuoaPMBs8p9aJj2U+rHMbYTZ4Tq0TH8t8DM6uN6fWOvGxzId1bsOTWuvExzIfo7PrzSX3ppCvH4wPfGwRfGhhfWu6BC33CQEAAAAAAAAAAAAAAAAAAAAALH4BzRcZX0CcAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3cy0rDQBQG4Pb9l24Ed7oR3HldulBEcKn4Al5WCvoEmoIJphCSkEnONPk+GNrQdPJDSs9wmma1AgAAAACYv4/oAKwOogNQeYsOQM3d3+NVaApKz8X4jA5B5b0YP9EhAAAAyJKeLwAAAADQh55ivm6KcRsdgspjMZ6iQ+yAKa+LPp/wWLnY67nd9v6UXkacO1dHPbfPWl5P6XXEuaF0Eh2ARt+J5xuzfizBep12vjHrB0BK6kde1I9umtZRh5OmaLa0Xm7TOuq0Yf/rYlyMFYbenIt52O5nQa6sPfPSZe2Zon91+e+5z8Aw+lfQ3X10gJmJ/v6OPj516se87UcHoLLpMR5Hh9hxfeqHWjO+PvVjs2/bPS2/BmQhvYfoANQl7h8szXZNWNrvfrkp60eqayDVj7yoH5lRPyY19P8mAAAAAAAAAAAAQ/0CSeFR6ECcAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQkAAAgAMPu/RrCot78gwpZgEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwCd5HWCo6wAAAAAAAAAAAAAAAOsauOWJ3ECcAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVP7WULoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBt5RKnmQJwAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="100" height="100" opacity="0.55">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3RQY4CMQxFQcT9Dz3bEWrUaeLGP6Qs1QIJQuL3fDwez4UdTfeddqZHFj2y6JFFjyxaZNEjix5Z9MiiRxY9suiR5Wi677QzPbLokbd/PfRgvEn3/XajRy49suiRRY8sWmTRI4seWfTIokcWPbLokeVouu+0Mz2y6JFHjyx6ZNEjix5Z9MiiRxY9chxN9512pkcWPbKcTff9djM63ffchRZju/nksx51+6+Yqjt072XlBv9Hj7k3V0713X7R2f4qp/Ke3Xvr6DEyV8/WQ49VVMy3dlh5VqqK0aO+x7s2I82u9tajvsfrb/Wo7TEz3+hRdU66irlyfuU9u3f3Cz3Ovq/H/HT06N7bHXsf6TH6nbv3WHVOik9Hj6we72bmf/WoHz1qelS1+fYeq87ZnR5ZjqbznN1V7bHqnN1V7VCPjB5n0/2+1czu8Gy637eamR2OTPf7VjOzv9HpfuNKruzuk+l+32runu73rebu6X7fambn9YyjzwAAAAAAAAAAAHf6A8UmaU9AnAAA
+  </data>
+ </layer>
+ <objectgroup name="Transition"/>
+ <objectgroup name="Light">
+  <object x="273" y="1739">
+   <properties>
+    <property name="color" value="light.red"/>
+    <property name="size" value="500"/>
+    <property name="variation" value="0.1"/>
+   </properties>
+  </object>
+  <object x="465" y="1930">
+   <properties>
+    <property name="color" value="light.red"/>
+    <property name="size" value="500"/>
+    <property name="variation" value="0.1"/>
+   </properties>
+  </object>
+  <object x="465" y="1549">
+   <properties>
+    <property name="color" value="light.red"/>
+    <property name="size" value="500"/>
+    <property name="variation" value="0.1"/>
+   </properties>
+  </object>
+  <object x="950" y="1610">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+  <object x="947" y="2000">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+  <object x="1234" y="2323">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+  <object x="1715" y="2162">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+  <object x="1772" y="2359">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+  <object x="1554" y="1744">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+  <object x="1713" y="1298">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+  <object x="1681" y="882">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+  <object x="1521" y="432">
+   <properties>
+    <property name="color" value="light.normal"/>
+    <property name="size" value="550"/>
+    <property name="variation" value="0.15"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Entity">
+  <object x="1582.67" y="683.333">
+   <properties>
+    <property name="dir" value="DOWN"/>
+    <property name="faction" value="2"/>
+    <property name="id" value="1"/>
+    <property name="type" value="creature"/>
+   </properties>
+  </object>
+  <object x="1620.67" y="544">
+   <properties>
+    <property name="dir" value="DOWN"/>
+    <property name="faction" value="2"/>
+    <property name="id" value="1"/>
+    <property name="type" value="creature"/>
+   </properties>
+  </object>
+  <object x="1515.33" y="2251.33">
+   <properties>
+    <property name="dir" value="DOWN"/>
+    <property name="faction" value="2"/>
+    <property name="id" value="2"/>
+    <property name="type" value="creature"/>
+   </properties>
+  </object>
+  <object x="1696" y="2362">
+   <properties>
+    <property name="faction" value="2"/>
+    <property name="id" value="3"/>
+    <property name="type" value="creature"/>
+   </properties>
+  </object>
+  <object x="380" y="1774.67">
+   <properties>
+    <property name="dir" value="DOWN"/>
+    <property name="faction" value="2"/>
+    <property name="id" value="2"/>
+    <property name="type" value="creature"/>
+   </properties>
+  </object>
+  <object x="549.333" y="1782.67">
+   <properties>
+    <property name="dir" value="DOWN"/>
+    <property name="faction" value="2"/>
+    <property name="id" value="2"/>
+    <property name="type" value="creature"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

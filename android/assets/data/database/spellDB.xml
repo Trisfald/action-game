@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	spell
+		Attributes
+			id: int
+			type: SpellType
+			category: SpellCategory
+			chargetime: float
+			cost: float
+		Children
+			effects
+				Children
+					effect
+						(custom rule)
+			spawner
+				(custom rule)
+-->
+<database>
+
+    <spell id="0" type="ICE" category="EMPOWER_WEAK" chargetime="1.5" cost="20">
+    	<effects>
+    	</effects>
+    	<spawner type="PROJECTILE" projectile="0" speed="50" range="500" block="SHIELD" crushPower="20" rounds="1" interval="0.6" amount="1">
+		    <damages>
+				<damage type="PHYSICAL" power="5" variation="0.3">
+					<scaling stat="STRENGTH" ratio="0.2"/>
+				</damage>
+			</damages>
+			<effects>
+			</effects>
+    	</spawner>
+    </spell>
+    
+</database>

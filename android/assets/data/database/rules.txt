@@ -1,0 +1,370 @@
+--> DATABASE RULES 
+
+####################################
+#            STATISTIC             #
+####################################
+
+stat
+    Attributes
+		value: float
+		variation: optional (default: 0)
+		negative: optional (default: false)
+		
+		
+		
+####################################
+#          DAMAGE LOADER           #
+####################################
+
+damage
+    Attributes
+    	type: DamageType
+		power: float
+		armorPen: float, optional (default: 0)
+		variation: optional (default: 0)
+	Children
+		scaling: optional
+			(DAMAGE SCALING)
+
+
+
+####################################
+#         DAMAGE SCALING           #
+####################################
+
+scaling
+	Attributes
+		stat: CreatureStatType
+		ratio: float
+
+
+
+####################################
+#               BODY               #
+####################################
+
+body
+	Attributes
+	Children
+	    stats: optional
+	    	Children
+	        	stat
+	        		(STATISTIC)
+		defences: optional
+			Children
+	        	stat
+	        		(STATISTIC)
+		immunities: optional
+			Children
+				immunity
+					Attributes
+						type: StatusType
+
+
+
+####################################
+#               FORM               #
+####################################
+
+------------- RECTANGLE ------------
+
+form
+	Attributes
+		type: FormType
+		width: float
+		height: float
+		perspective: float, optional (default: as defined in GlobalVar)
+		hitlevel: HitLevel
+		
+		
+-------------- CIRCLE --------------
+
+form
+	Attributes
+		type: FormType
+		radius: float
+		hitlevel: HitLevel
+
+
+
+####################################
+#              EFFECT              #
+####################################
+
+------------- OVERTURN -------------
+
+effect
+	Attributes
+		duration: float, optional (default: -1)
+		charges: int, optional (default: -1)
+		trigger: ChargeTrigger, optional (default: NONE)
+		stackable: EffectStacking
+		propagation: float, optional (default: 0)
+		sustain: float, optional (default: 0)
+		icon: TextureRRef, optional (default: default effect icon)
+
+
+-------------- STATUS --------------
+
+effect
+	Attributes
+		effectType: EffectType
+		probability: float, optional (default: 1)
+		target: AlterationTarget, optional (default: BODY)
+		OVERTURN -> ATTRIBUTES
+		type: StatusType
+		force: float, optional (default: 1)
+		variation: float, optional (default: 0)
+		
+		
+--------------- DOT ----------------
+
+effect
+	Attributes
+		effectType: EffectType
+		probability: float, optional (default: 1)
+		target: AlterationTarget, optional (default: BODY)		
+		OVERTURN -> ATTRIBUTES
+		type: DamageType
+		force: float
+		variation: float, optional (default: 0)
+		interval: float
+		aging: float, optional (default: 0)
+		
+		
+----------- BONUS DAMAGE ------------
+
+effect
+	Attributes
+		effectType: EffectType
+		probability: float, optional (default: 1)
+		target: AlterationTarget, optional (default: BODY)		
+		OVERTURN -> ATTRIBUTES
+		DAMAGE LOADER -> ATTRIBUTES
+	Children
+		DAMAGE LOADER -> CHILDREN
+		
+
+----------- BONUS EFFECT ------------
+
+effect
+	Attributes
+		effectType: EffectType
+		probability: float, optional (default: 1)
+		target: AlterationTarget, optional (default: BODY)		
+		OVERTURN -> ATTRIBUTES
+	Children
+		effect
+			(EFFECT)
+
+
+
+####################################
+#            KNOCKBACK             #
+####################################
+
+knockback
+	Attributes
+		speed: float
+		accel: float
+		variation: float
+		
+
+
+####################################
+#             TRIGGER              #
+####################################
+
+---------- DEATH TRIGGER -----------
+
+trigger
+	Attributes
+		type: TriggerType
+		creature: String
+		amount: int
+		
+		
+---------- MAP TRIGGER -----------
+
+trigger
+	Attributes
+		type: TriggerType
+		map: code
+
+
+
+####################################
+#              EVENT               #
+####################################
+
+------------ NEW QUEST -------------
+
+event
+	Attributes
+		type: EventType
+		newQuest: int
+	Children
+		questRequirement
+			(QUEST REQUIREMENT)		
+			
+
+-------------- DEATH ---------------
+
+event
+	Attributes
+		type: EventType
+		creature: String
+		amount: int
+		
+
+--------------- MAP ----------------
+
+event
+	Attributes
+		type: EventType
+		map: int
+	
+
+
+####################################
+#        QUEST REQUIREMENT         #
+####################################
+
+questRequirement
+	Children
+		active: optional, multiple
+			Attributes
+				id: int
+		completed: optional, multiple
+			Attributes
+				id: int
+		notActive: optional, multiple
+			Attributes
+				id: int
+		notCompleted: optional, multiple
+			Attributes
+				id: int
+
+
+
+####################################
+#         ANIMATION ARRAY          #
+####################################
+
+animation
+	Attributes
+		duration: float
+		texture: TextureRRef
+		playMode: PlayMode
+		width: int
+		height: int
+		
+		
+		
+####################################
+#             MOTION               #
+####################################
+		
+---------- SIMPLE MOTION -----------
+
+motion
+	Attributes
+		id: int
+		type: MotionType
+		offsetX: float, optional (default: 0)
+		offsetY: float, optional (default: 0)
+	Children
+		animations
+			(ANIMATION ARRAY)
+
+
+---------- ATTACK MOTION -----------
+
+motion
+	Attributes
+		id: int
+		type: MotionType
+		offsetX: float, optional (default: 0)
+		offsetY: float, optional (default: 0)
+	Children
+		charge
+			(ANIMATION ARRAY)
+		setup
+			(ANIMATION ARRAY)
+		ready
+			(ANIMATION ARRAY)
+		setoff
+			(ANIMATION ARRAY)
+			
+
+---------- BLOCK MOTION ------------
+
+motion
+	Attributes
+		id: int
+		type: MotionType
+		offsetX: float, optional (default: 0)
+		offsetY: float, optional (default: 0)
+	Children
+		setup
+			(ANIMATION ARRAY)
+		ready
+			(ANIMATION ARRAY)
+		setoff
+			(ANIMATION ARRAY)
+			
+
+----------- BEAM MOTION ------------
+
+motion
+	Attributes
+		id: int
+		type: MotionType
+	Children
+		head
+			(ANIMATION ARRAY)
+		body
+			(ANIMATION ARRAY)
+
+
+
+####################################
+#             SPAWNER              #
+####################################
+		
+-------------- BEAM ----------------
+
+spawner
+	Attributes
+		type: SpawnerType
+		beam: int
+		growth: float
+		duration: float
+		block: BlockLevel
+		crushPower: float
+		frequency: float
+		selective: optional (default: true)
+	Children
+		damages: optional
+		effects: optional
+		knockback: optional
+
+
+----------- PROJECTILE -------------
+
+spawner
+	Attributes
+		type: SpawnerType
+		projectile: int
+		speed: float
+		range: float
+		block: BlockLevel
+		crushPower: float
+		selective: optional (default: true)
+		rounds: int
+		interval: float
+		amount: int
+	Children
+		damages: optional
+		effects: optional
+		knockback: optional

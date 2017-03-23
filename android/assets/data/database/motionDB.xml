@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	motion
+		Fields
+			id: int
+			label: String
+			type: MotionType
+-->
+<database>
+
+	<!-- 
+		ID 0 - 19999 Reserved for creatures
+	-->
+
+	<motion id="0" label="player idle" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/player.pack,idle" width="64" height="64"/>
+	</motion>
+	
+	<motion id="1" label="player walk" type="SIMPLE" offsetY="12">
+		<animations duration="0.08" texture="data/creature/player.pack,walk" playMode="LOOP" width="64" height="64"/>
+	</motion>
+		
+	<motion id="2" label="player hurt" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/player.pack,hurt" width="64" height="64"/>
+	</motion>
+	
+	<motion id="3" label="player attack" type="ATTACK" offsetY="12">
+		<charge duration="0" texture="data/creature/player.pack,idle" width="64" height="64"/>
+		<setup duration="0.11" texture="data/creature/player.pack,attack.setup" width="192" height="192"/>
+		<ready duration="0.11" texture="data/creature/player.pack,attack.ready" width="192" height="192"/>
+		<setoff duration="0.5" texture="data/creature/player.pack,attack.setoff" width="192" height="192"/>
+	</motion>
+	
+	<motion id="4" label="player block idle" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/player.pack,block.idle" width="64" height="64"/>
+	</motion>	
+	
+	<motion id="5" label="player block walk" type="SIMPLE" offsetY="12">
+		<animations duration="0.08" texture="data/creature/player.pack,block.walk" playMode="LOOP" width="64" height="64"/>
+	</motion>
+	
+	<motion id="10" label="leader idle" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/leader.pack,idle" width="64" height="64"/>
+	</motion>
+	
+	<motion id="11" label="leader walk" type="SIMPLE" offsetY="12">
+		<animations duration="0.08" texture="data/creature/leader.pack,walk" playMode="LOOP" width="64" height="64"/>
+	</motion>
+		
+	<motion id="12" label="leader hurt" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/leader.pack,hurt" width="64" height="64"/>
+	</motion>
+	
+	<motion id="13" label="leader attack" type="ATTACK" offsetY="12">
+		<charge duration="0" texture="data/creature/leader.pack,idle" width="64" height="64"/>
+		<setup duration="0.11" texture="data/creature/leader.pack,attack.setup" width="192" height="192"/>
+		<ready duration="0.11" texture="data/creature/leader.pack,attack.ready" width="192" height="192"/>
+		<setoff duration="0.5" texture="data/creature/leader.pack,attack.setoff" width="192" height="192"/>
+	</motion>
+	
+	<motion id="14" label="leader block idle" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/leader.pack,block.idle" width="64" height="64"/>
+	</motion>	
+	
+	<motion id="15" label="leader block walk" type="SIMPLE" offsetY="12">
+		<animations duration="0.08" texture="data/creature/leader.pack,block.walk" playMode="LOOP" width="64" height="64"/>
+	</motion>
+	
+	<motion id="20" label="archer idle" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/archer.pack,idle" width="64" height="64"/>
+	</motion>
+	
+	<motion id="21" label="archer walk" type="SIMPLE" offsetY="12">
+		<animations duration="0.08" texture="data/creature/archer.pack,walk" playMode="LOOP" width="64" height="64"/>
+	</motion>
+	
+	<motion id="22" label="archer hurt" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/archer.pack,hurt" width="64" height="64"/>
+	</motion>
+	
+	<motion id="23" label="archer attack" type="ATTACK" offsetY="12">
+		<charge duration="0" texture="data/creature/archer.pack,idle" width="64" height="64"/>
+		<setup duration="0.09" texture="data/creature/archer.pack,attack.setup" width="64" height="64"/>
+		<ready duration="0.09" texture="data/creature/archer.pack,attack.ready" width="64" height="64"/>
+		<setoff duration="0.16" texture="data/creature/archer.pack,attack.setoff" width="64" height="64"/>
+	</motion>
+	
+	<motion id="30" label="thief idle" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/thief.pack,idle" width="64" height="64"/>
+	</motion>
+	
+	<motion id="31" label="thief walk" type="SIMPLE" offsetY="12">
+		<animations duration="0.08" texture="data/creature/thief.pack,walk" playMode="LOOP" width="64" height="64"/>
+	</motion>
+	
+	<motion id="32" label="thief hurt" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/thief.pack,hurt" width="64" height="64"/>
+	</motion>
+	
+	<motion id="33" label="thief attack" type="ATTACK" offsetY="12">
+		<charge duration="0" texture="data/creature/thief.pack,idle" width="64" height="64"/>
+		<setup duration="0.11" texture="data/creature/thief.pack,attack.setup" width="64" height="64"/>
+		<ready duration="0.11" texture="data/creature/thief.pack,attack.ready" width="64" height="64"/>
+		<setoff duration="0.5" texture="data/creature/thief.pack,attack.setoff" width="64" height="64"/>
+	</motion>
+	
+	<motion id="40" label="spearman idle" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/spearman.pack,idle" width="64" height="64"/>
+	</motion>
+	
+	<motion id="41" label="spearman walk" type="SIMPLE" offsetY="12">
+		<animations duration="0.08" texture="data/creature/spearman.pack,walk" playMode="LOOP" width="64" height="64"/>
+	</motion>
+	
+	<motion id="42" label="spearman hurt" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/spearman.pack,hurt" width="64" height="64"/>
+	</motion>
+	
+	<motion id="43" label="spearman attack" type="ATTACK" offsetY="12">
+		<charge duration="0" texture="data/creature/spearman.pack,idle" width="64" height="64"/>
+		<setup duration="0.08" texture="data/creature/spearman.pack,attack.setup" width="64" height="64"/>
+		<ready duration="0.08" texture="data/creature/spearman.pack,attack.ready" width="64" height="64"/>
+		<setoff duration="0.25" texture="data/creature/spearman.pack,attack.setoff" width="64" height="64"/>
+	</motion>
+	
+	<motion id="44" label="spearman block idle" type="SIMPLE" offsetY="12">
+		<animations duration="0" texture="data/creature/spearman.pack,block.idle" width="64" height="64"/>
+	</motion>	
+	
+	<motion id="45" label="spearman block walk" type="SIMPLE" offsetY="12">
+		<animations duration="0.08" texture="data/creature/spearman.pack,block.walk" playMode="LOOP" width="64" height="64"/>
+	</motion>
+	
+	<!-- 
+		ID 20000 - 29999 Reserved for areas
+	-->
+	
+	<motion id="20000" label="arrow" type="SIMPLE">
+		<animations duration="0" texture="data/area/area.pack,arrow" width="5" height="31"/>
+	</motion>
+	
+</database>

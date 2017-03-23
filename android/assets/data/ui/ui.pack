@@ -1,0 +1,110 @@
+
+ui.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+touchpad.bg
+  rotate: false
+  xy: 1, 53
+  size: 202, 202
+  orig: 202, 202
+  offset: 0, 0
+  index: -1
+button.down
+  rotate: false
+  xy: 205, 79
+  size: 176, 176
+  orig: 176, 176
+  offset: 0, 0
+  index: -1
+button.up
+  rotate: false
+  xy: 383, 79
+  size: 176, 176
+  orig: 176, 176
+  offset: 0, 0
+  index: -1
+touchpad.knob
+  rotate: false
+  xy: 561, 175
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+empty
+  rotate: false
+  xy: 1, 41
+  size: 140, 10
+  orig: 140, 10
+  offset: 0, 0
+  index: -1
+life
+  rotate: false
+  xy: 205, 69
+  size: 138, 8
+  orig: 138, 8
+  offset: 0, 0
+  index: -1
+stamina
+  rotate: false
+  xy: 643, 247
+  size: 138, 8
+  orig: 138, 8
+  offset: 0, 0
+  index: -1
+armor
+  rotate: false
+  xy: 561, 141
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+button.attack
+  rotate: false
+  xy: 1, 7
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+creaturebar.blank
+  rotate: false
+  xy: 1, 1
+  size: 36, 4
+  orig: 36, 4
+  offset: 0, 0
+  index: -1
+button.block
+  rotate: false
+  xy: 35, 7
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+creaturebar.charge
+  rotate: false
+  xy: 143, 49
+  size: 34, 2
+  orig: 34, 2
+  offset: 0, 0
+  index: -1
+creaturebar.life
+  rotate: false
+  xy: 205, 65
+  size: 34, 2
+  orig: 34, 2
+  offset: 0, 0
+  index: -1
+filledbar.black
+  rotate: false
+  xy: 345, 76
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+filledbar.red
+  rotate: false
+  xy: 643, 244
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1

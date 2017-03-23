@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	ai
+		Attributes
+			id: int
+		Children
+            statistics
+            	Children
+	            	stat
+						(custom rule)
+			properties
+				Attributes
+					wander: float
+-->
+<database>
+	<ai id="0" label="Standard">
+        <statistics>
+        	<stat type="AGGRESSIVITY" value="100"/>
+        	<stat type="INTELLIGENCE" value="100"/>
+        	<stat type="DEFENCE" value="100"/>
+        	<stat type="AWARENESS" value="100"/>
+        	<stat type="REFLEXES" value="100"/>
+        </statistics>
+        <properties wander="64"/>
+	</ai>
+	<ai id="1" label="Bandit archer">
+        <statistics>
+        	<stat type="AGGRESSIVITY" value="85"/>
+        	<stat type="INTELLIGENCE" value="85"/>
+        	<stat type="DEFENCE" value="70"/>
+        	<stat type="AWARENESS" value="110"/>
+        	<stat type="REFLEXES" value="90"/>
+        </statistics>
+        <properties wander="0"/>
+	</ai>
+	<ai id="2" label="Bandit spearman">
+        <statistics>
+        	<stat type="AGGRESSIVITY" value="85"/>
+        	<stat type="INTELLIGENCE" value="80"/>
+        	<stat type="DEFENCE" value="100"/>
+        	<stat type="AWARENESS" value="80"/>
+        	<stat type="REFLEXES" value="90"/>
+        </statistics>
+        <properties wander="0"/>
+	</ai>
+	<ai id="3" label="Thief">
+        <statistics>
+        	<stat type="AGGRESSIVITY" value="100"/>
+        	<stat type="INTELLIGENCE" value="95"/>
+        	<stat type="DEFENCE" value="80"/>
+        	<stat type="AWARENESS" value="90"/>
+        	<stat type="REFLEXES" value="110"/>
+        </statistics>
+        <properties wander="64"/>
+	</ai>
+	<ai id="4" label="Bandit leader">
+        <statistics>
+        	<stat type="AGGRESSIVITY" value="110"/>
+        	<stat type="INTELLIGENCE" value="95"/>
+        	<stat type="DEFENCE" value="95"/>
+        	<stat type="AWARENESS" value="95"/>
+        	<stat type="REFLEXES" value="105"/>
+        </statistics>
+        <properties wander="0"/>
+	</ai>
+</database>

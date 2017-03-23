@@ -1,0 +1,26 @@
+
+particles.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+particle-cloud
+  rotate: false
+  xy: 1, 67
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+particle-star
+  rotate: false
+  xy: 1, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+particle
+  rotate: false
+  xy: 131, 163
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

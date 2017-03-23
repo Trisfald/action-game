@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	quest
+		Attributes
+			id: int
+			title: int
+		Children
+			nodes
+				Children
+					node
+						Attributes
+							text: int
+						Children
+							triggers: optional
+								Children
+									trigger
+										(TRIGGER)
+							
+-->
+<database>
+	<quest id="0" title="30000">
+		<nodes>
+			<node text="30001">
+				<triggers>
+					<trigger type="MAP" map="1"/>
+				</triggers>
+			</node>
+			<node text="30002">
+				<triggers>
+					<trigger type="MAP" map="2"/>
+				</triggers>
+			</node>
+			<node text="30003">
+				<triggers>
+					<trigger type="DEATH" creature="4" amount="1"/>
+				</triggers>
+			</node>
+			<node text="0"/>
+		</nodes>
+	</quest>
+</database>

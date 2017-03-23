@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	faction
+		Fields
+			id: int, id of the faction
+		Children: each faction must have a relation towards each other faction
+			relation
+				Fields
+					value: int, standing towards this faction (id is the order); the higher, the worst
+-->
+<database>
+	<faction label="Neutral" id="0">
+		<relation value="0"/>
+		<relation value="0"/>
+        <relation value="0"/>
+	</faction>
+	<faction label="Player" id="1">
+		<relation value="0"/>
+		<relation value="0"/>
+        <relation value="100"/>
+	</faction>
+	<faction label="Bandits" id="2">
+		<relation value="0"/>
+		<relation value="100"/>
+        <relation value="0"/>
+	</faction>
+</database>

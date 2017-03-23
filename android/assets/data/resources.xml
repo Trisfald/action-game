@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <resource type="texture">data/tileset/tileset.png</resource>
+    
+	<resource type="textureatlas">data/particle/particles.pack</resource>
+
+	<resource type="textureatlas">data/creature/player.pack</resource>
+	<resource type="textureatlas">data/creature/leader.pack</resource>
+	<resource type="textureatlas">data/creature/archer.pack</resource>
+	<resource type="textureatlas">data/creature/spearman.pack</resource>
+	<resource type="textureatlas">data/creature/thief.pack</resource>
+	<resource type="textureatlas">data/area/area.pack</resource>
+	
+	<resource type="particleeffect" atlas="data/particle/particles.pack">data/particle/blood.p</resource>
+	
+	<resource type="sound">data/sound/block.ogg</resource>
+	<resource type="sound">data/sound/footstep.ogg</resource>
+	<resource type="sound">data/sound/slash.ogg</resource>
+	<resource type="sound">data/sound/swoosh.ogg</resource>
+	<resource type="sound">data/sound/dagger.ogg</resource>
+	<resource type="sound">data/sound/bow.ogg</resource>
+	<resource type="sound">data/sound/arrow.ogg</resource>
+	
+	<resource type="music">data/music/veridia battle 2.ogg</resource>
+
+</resources>

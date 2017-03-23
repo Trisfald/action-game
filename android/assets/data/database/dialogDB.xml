@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	dialog
+		Fields
+			id: int
+		Content
+			text: String
+-->
+<database>
+
+	<!-- 
+		ID 0 - 9999 Reserved for in game messages
+	-->
+	
+    <dialog id="0"></dialog>
+    <dialog id="1">Yes</dialog>
+    <dialog id="2">No</dialog>
+   	
+    <dialog id="3">Physical</dialog>
+    <dialog id="4">Elemental</dialog>
+    <dialog id="5">Pure</dialog>
+    
+    <dialog id="10">Physical resistance</dialog>
+    <dialog id="11">Physical reduction</dialog>
+    <dialog id="12">Elemental resistance</dialog>
+    <dialog id="13">Elemental reduction</dialog>
+    <dialog id="14">Physical soak</dialog>
+    <dialog id="15">Elemental soak</dialog>
+    
+    <dialog id="20">Hp</dialog>
+    <dialog id="21">Mass</dialog>
+    <dialog id="22">Special</dialog>
+    <dialog id="23">Special regen</dialog>
+    <dialog id="24">Quickness</dialog>
+    <dialog id="25">Stamina</dialog>
+    <dialog id="26">Stamina regen</dialog>
+    <dialog id="27">Strength</dialog>
+    <dialog id="28">Mind</dialog>
+    <dialog id="29">Constitution</dialog>
+    <dialog id="30">Movement</dialog>
+    
+    <dialog id="40">Start</dialog>
+    <dialog id="41">Exit</dialog>
+    <dialog id="42">Menu</dialog>
+    <dialog id="43">New mission</dialog>
+    <dialog id="44">Mission completed</dialog>
+    
+    <!-- 
+		ID 10000 - 19999 Reserved for items
+	-->
+	
+	<dialog id="10000">Money</dialog>
+	<dialog id="10001">Money</dialog>
+	<dialog id="10002">Punch</dialog>
+	<dialog id="10003">Punch</dialog>
+	<dialog id="10004">Sword</dialog>
+	<dialog id="10005">Sword</dialog>
+	<dialog id="10006">Shield</dialog>
+	<dialog id="10007">Wooden shield</dialog>
+	<dialog id="10008">Magic chainmail</dialog>
+	<dialog id="10009">Enchanted chainmail</dialog>
+	<dialog id="10010">Dagger</dialog>
+	<dialog id="10011">Simple dagger</dialog>
+	<dialog id="10012">Bow</dialog>
+	<dialog id="10013">Simple bow</dialog>
+	<dialog id="10014">Spear</dialog>
+	<dialog id="10015">Simple spear</dialog>
+	<dialog id="10016">Cloth armor</dialog>
+	<dialog id="10017">Cloth armor</dialog>
+	<dialog id="10018">Leather armor</dialog>
+	<dialog id="10019">Leather armor</dialog>
+	<dialog id="10020">Chainmail</dialog>
+	<dialog id="10021">Chainmail</dialog>
+	<dialog id="10022">Plate armor</dialog>
+	<dialog id="10023">Plate armor</dialog>
+	
+    <!-- 
+		ID 20000 - 29999 Reserved for creatures
+	-->
+	
+	<dialog id="20000">Player</dialog>
+	<dialog id="20001">Bandit archer</dialog>
+	<dialog id="20002">Bandit spearman</dialog>
+	<dialog id="20003">Thief</dialog>
+	<dialog id="20004">Bandit leader</dialog>
+	
+    <!-- 
+		ID 30000 - 49999 Reserved for quests
+	-->
+	
+	<dialog id="30000">Infiltration</dialog>
+	<dialog id="30001">Explore the bandits' lair!</dialog>
+	<dialog id="30002">Proceed further!</dialog>
+	<dialog id="30003">Defeat the bandits' leader!</dialog>
+	
+	
+
+</database>

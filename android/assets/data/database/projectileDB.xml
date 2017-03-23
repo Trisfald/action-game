@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	projectile
+		Attributes
+			id: int
+			goThrough: int, optional (default: 0)
+			explosion: int, optional (default: -1)
+			sound: String, optional (default: null)
+		Children
+			form
+				(custom rule)
+			body
+				(custom rule)
+			motions
+				Children
+					motion
+						Fields
+							type: ProjectileMotionType
+							id: int
+-->
+<database>
+
+	<projectile id="0" goThrough="0" sound="data/sound/arrow.ogg">
+	    <form type="RECTANGLE" width="5" height="31" perspective="0" hitlevel="IMPOSSIBLE"/>
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="5" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+        <motions>
+        	<motion type="STANDARD" id="20000"/>
+        </motions>
+	</projectile>
+	
+</database>

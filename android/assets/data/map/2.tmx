@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="../tileset/TERRAINS.tsx"/>
+ <tileset firstgid="3" source="../tileset/tileset.tsx"/>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XwU3DMBiG4UgFMQAjZIQemAAhzh2hMAAqTADsjS+RUOQobZWEL+Q5PHf7f2Vb3jVNswMAAAAAAAAAAAAAAAAAAAAAAAAAAABi3BUPFfcBa9uC/vyfi5eKgz6LdOjP/7V4rzgO9NFlmhZdh/78P4qvitNAn4Mmk7ToOvTn/128VXwO9DlqMkmLrsPQ/Md0fU6aTNLi2g61LppktNDkOvsZW9SatAF7TrafuUW/iR7jPeZu8buJHuM9lmjR0UOPNdEjix5Z9MiiR5bb4mmhFo/FTcCe0y11RtqAva6BHln0yKJHliXedG/5ZeY+I23AHtdEjyxz3lnuqpwmWuQ00SKniRY5TbTIaaJFThMtlnHu36QNWOsW6JFFjyx6ZNEjix5Z9Mhyzh/E3yOniRZ/Y+jeagPWtkV6ZPmPPX4A52GKDUCcAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YSw7CIBAAUO6/demmiRfwFh6hR+gR3LgwRohEa/pRCNX3EtIMbVgMDCghAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwJfs3/UN8np5i6rrl/RzbEFufvTuFxxxRRsr7OcZ9bEP2PmR9z/PEd+R5zfMcwuv+NLZfpRpSL5/L877kbBibp36kn/nSuv6GtfPK3W1vGcvbZeE4+ffOk3VK5i39HlAny5XOl/kAAADYjk/uS+AX7Rob598dGhuHu7XrW12UsXZ9q4uy5q53dVHH3PWuLurrJmLqOk7EAK3oJmLqSPeE784P94hAa7qJmLr8/wAAWnMF7uaUWUCcAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVP7WULoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBt5RKnmQJwAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVP7WULoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBt5RKnmQJwAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="100" height="100" opacity="0.6">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3RUY6DMAwFQMT9D71flRBKaNhGdgzzpFFLS2nst2/btgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUN4n5/fE7n9rfNbqRD8xPbT6OH/fu585XbR2PxJ9zO9iRvSyVh/HZM9VUW+Pd9K6fz+8Mt7D3d2P5vwfjPURkexZK4hM9qwVRCZ71goikz1rBZHJnrWKiGTPWElEsmesJCLZM1YSkewZK7na4Z18exa/dzIj2bNVdNzdjJyfiT6q6+3zTlrP4fdOZvSRPctT9PZ7ldbvmN/Jf/rIPvtTXe28df35jJhORq6J7aSX7DO+iT7Wctz5uQN95HXS6yP7bG8zkuwzvok+1nLc+bkDfeiD62Sf7a10sRZ9rEUfa3laH3/Dc9c/QJwAAA==
+  </data>
+ </layer>
+ <objectgroup name="Transition"/>
+ <objectgroup name="Light">
+  <object x="1808" y="2473">
+   <properties>
+    <property name="color" value="light.torch"/>
+    <property name="size" value="700"/>
+    <property name="variation" value="0.05"/>
+   </properties>
+  </object>
+  <object x="1745" y="2889">
+   <properties>
+    <property name="color" value="light.torch"/>
+    <property name="size" value="600"/>
+    <property name="variation" value="0.05"/>
+   </properties>
+  </object>
+  <object x="1489" y="2888">
+   <properties>
+    <property name="color" value="light.torch"/>
+    <property name="size" value="600"/>
+    <property name="variation" value="0.05"/>
+   </properties>
+  </object>
+  <object x="1808" y="2120">
+   <properties>
+    <property name="color" value="light.torch"/>
+    <property name="size" value="700"/>
+    <property name="variation" value="0.05"/>
+   </properties>
+  </object>
+  <object x="1424.67" y="2120.67">
+   <properties>
+    <property name="color" value="light.torch"/>
+    <property name="size" value="700"/>
+    <property name="variation" value="0.05"/>
+   </properties>
+  </object>
+  <object x="1426" y="2472">
+   <properties>
+    <property name="color" value="light.torch"/>
+    <property name="size" value="700"/>
+    <property name="variation" value="0.05"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Entity">
+  <properties>
+   <property name="faction" value="2"/>
+   <property name="id" value="4"/>
+   <property name="type" value="creature"/>
+  </properties>
+  <object x="1618" y="2201">
+   <properties>
+    <property name="dir" value="DOWN"/>
+    <property name="faction" value="2"/>
+    <property name="id" value="4"/>
+    <property name="type" value="creature"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

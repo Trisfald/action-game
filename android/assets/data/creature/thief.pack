@@ -1,0 +1,47 @@
+
+thief.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+walk
+  rotate: false
+  xy: 1, 517
+  size: 512, 256
+  orig: 512, 256
+  offset: 0, 0
+  index: -1
+attack.setup
+  rotate: false
+  xy: 1, 259
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+hurt
+  rotate: false
+  xy: 515, 517
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+idle
+  rotate: false
+  xy: 1, 1
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+attack.ready
+  rotate: false
+  xy: 259, 259
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+attack.setoff
+  rotate: false
+  xy: 581, 517
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1

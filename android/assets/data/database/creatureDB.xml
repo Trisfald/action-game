@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	creature
+		Attributes
+			id: int
+			name: int
+			ai: int
+			magic: MagicSkill, optional (default: NONE)
+		Children
+			form
+				(custom rule)
+			body
+				(custom rule)
+            statistics
+            	Children
+	            	stat
+						(custom rule)
+			inventory
+				Attributes
+					innateWeapon: optional (default: -1)
+					weapon: optional (default: -1)
+					shield: optional (default: -1)
+				Children
+					items
+						Attributes
+							id: int
+					armor
+						Children
+							protection
+								Attributes
+									slot: ProtectionSlot
+									id: int
+			graphics
+				simple
+					Children
+						motion
+							Attributes
+								type
+								id: int
+								sound: String
+				attack
+					Children
+						motion
+							Attributes
+								type
+								id: int
+								sound: String
+			spells
+				Attributes
+				Children
+					spell
+						Attributes
+							id: int
+-->
+<database>
+
+    <creature id="0" label="Player" name="20000" ai="0" magic="SPECIAL">
+    	<form type="RECTANGLE" width="32" height="52" perspective="0.4" hitlevel="ALL"/>
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="100" negative="false"/>
+	        	<stat type="MASS" value="100" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	        </defences>
+	        <immunities>
+	        </immunities>
+        </body>
+        <statistics>
+        	<stat type="STRENGTH" value="130" negative="false"/>
+        	<stat type="MIND" value="130" negative="false"/>
+        	<stat type="CONSTITUTION" value="130" negative="false"/>
+        	<stat type="QUICKNESS" value="130" negative="false"/>
+        	<stat type="MOVEMENT" value="130" negative="false"/>
+        	<stat type="STAMINA" value="130" negative="false"/>
+        	<stat type="STAMINA_REGEN" value="130" negative="false"/>
+        	<stat type="SPECIAL" value="130" negative="false"/>
+        	<stat type="SPECIAL_REGEN" value="130" negative="false"/>
+        </statistics>
+        <inventory innateWeapon="1" weapon="2" shield="3">
+        	<items>
+        	</items>
+        	<armor>
+        		<protection slot="TORSO" id="4"/>
+        	</armor>
+        </inventory>
+        <spells>
+        </spells>
+        <graphics>
+	        <simple>
+	            <motion type="IDLE" id="0"/>
+	        	<motion type="WALK" id="1" sound="data/sound/footstep.ogg"/>
+	        	<motion type="HURT" id="2"/>
+	        	<motion type="BLOCK_IDLE" id="4"/>
+	        	<motion type="BLOCK_WALK" id="5"/>
+	        </simple>
+	        <attack>
+	        	<motion type="MELEE" id="3" sound="data/sound/slash.ogg"/>
+	        </attack>
+        </graphics>
+    </creature>
+    
+    <creature id="1" label="Bandit archer" name="20001" ai="1" magic="SPECIAL">
+    	<form type="RECTANGLE" width="32" height="52" perspective="0.4" hitlevel="ALL"/>
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="70" negative="false"/>
+	        	<stat type="MASS" value="95" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	        </defences>
+	        <immunities>
+	        </immunities>
+        </body>
+        <statistics>
+        	<stat type="STRENGTH" value="75" negative="false"/>
+        	<stat type="MIND" value="50" negative="false"/>
+        	<stat type="CONSTITUTION" value="65" negative="false"/>
+        	<stat type="QUICKNESS" value="80" negative="false"/>
+        	<stat type="MOVEMENT" value="85" negative="false"/>
+        	<stat type="STAMINA" value="90" negative="false"/>
+        	<stat type="STAMINA_REGEN" value="95" negative="false"/>
+        	<stat type="SPECIAL" value="100" negative="false"/>
+        	<stat type="SPECIAL_REGEN" value="100" negative="false"/>
+        </statistics>
+        <inventory innateWeapon="1" weapon="6" shield="-1">
+        	<items>
+        	</items>
+        	<armor>
+        		<protection slot="TORSO" id="9"/>
+        	</armor>
+        </inventory>
+        <spells>
+        </spells>
+        <graphics>
+	        <simple>
+	            <motion type="IDLE" id="20"/>
+	        	<motion type="WALK" id="21" sound="data/sound/footstep.ogg"/>
+	        	<motion type="HURT" id="22"/>
+	        </simple>
+	        <attack>
+	        	<motion type="RANGED" id="23" sound="data/sound/bow.ogg"/>
+	        </attack>
+        </graphics>
+    </creature>
+    
+    <creature id="2" label="Bandit spearman" name="20002" ai="2" magic="SPECIAL">
+    	<form type="RECTANGLE" width="32" height="52" perspective="0.4" hitlevel="ALL"/>
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="85" negative="false"/>
+	        	<stat type="MASS" value="100" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	        </defences>
+	        <immunities>
+	        </immunities>
+        </body>
+        <statistics>
+        	<stat type="STRENGTH" value="80" negative="false"/>
+        	<stat type="MIND" value="50" negative="false"/>
+        	<stat type="CONSTITUTION" value="80" negative="false"/>
+        	<stat type="QUICKNESS" value="70" negative="false"/>
+        	<stat type="MOVEMENT" value="85" negative="false"/>
+        	<stat type="STAMINA" value="100" negative="false"/>
+        	<stat type="STAMINA_REGEN" value="80" negative="false"/>
+        	<stat type="SPECIAL" value="100" negative="false"/>
+        	<stat type="SPECIAL_REGEN" value="100" negative="false"/>
+        </statistics>
+        <inventory innateWeapon="1" weapon="7" shield="3">
+        	<items>
+        	</items>
+        	<armor>
+        		<protection slot="TORSO" id="10"/>
+        	</armor>
+        </inventory>
+        <spells>
+        </spells>
+        <graphics>
+	        <simple>
+	            <motion type="IDLE" id="40"/>
+	        	<motion type="WALK" id="41" sound="data/sound/footstep.ogg"/>
+	        	<motion type="HURT" id="42"/>
+	        	<motion type="BLOCK_IDLE" id="44"/>
+	        	<motion type="BLOCK_WALK" id="45"/>
+	        </simple>
+	        <attack>
+	        	<motion type="MELEE" id="43" sound="data/sound/swoosh.ogg"/>
+	        </attack>
+        </graphics>
+    </creature>
+    
+    <creature id="3" label="Thief" name="20003" ai="3" magic="SPECIAL">
+    	<form type="RECTANGLE" width="32" height="52" perspective="0.4" hitlevel="ALL"/>
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="70" negative="false"/>
+	        	<stat type="MASS" value="90" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	        </defences>
+	        <immunities>
+	        </immunities>
+        </body>
+        <statistics>
+        	<stat type="STRENGTH" value="75" negative="false"/>
+        	<stat type="MIND" value="70" negative="false"/>
+        	<stat type="CONSTITUTION" value="60" negative="false"/>
+        	<stat type="QUICKNESS" value="125" negative="false"/>
+        	<stat type="MOVEMENT" value="120" negative="false"/>
+        	<stat type="STAMINA" value="100" negative="false"/>
+        	<stat type="STAMINA_REGEN" value="110" negative="false"/>
+        	<stat type="SPECIAL" value="100" negative="false"/>
+        	<stat type="SPECIAL_REGEN" value="100" negative="false"/>
+        </statistics>
+        <inventory innateWeapon="2" weapon="5" shield="-1">
+        	<items>
+        	</items>
+        	<armor>
+        		<protection slot="TORSO" id="8"/>
+        	</armor>
+        </inventory>
+        <spells>
+        </spells>
+        <graphics>
+	        <simple>
+	            <motion type="IDLE" id="30"/>
+	        	<motion type="WALK" id="31" sound="data/sound/footstep.ogg"/>
+	        	<motion type="HURT" id="32"/>
+	        </simple>
+	        <attack>
+	        	<motion type="MELEE" id="33" sound="data/sound/dagger.ogg"/>
+	        </attack>
+        </graphics>
+    </creature>
+    
+    <creature id="4" label="Bandit leader" name="20004" ai="4" magic="SPECIAL">
+    	<form type="RECTANGLE" width="32" height="52" perspective="0.4" hitlevel="ALL"/>
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="120" negative="false"/>
+	        	<stat type="MASS" value="105" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	        </defences>
+	        <immunities>
+	        </immunities>
+        </body>
+        <statistics>
+        	<stat type="STRENGTH" value="125" negative="false"/>
+        	<stat type="MIND" value="70" negative="false"/>
+        	<stat type="CONSTITUTION" value="110" negative="false"/>
+        	<stat type="QUICKNESS" value="80" negative="false"/>
+        	<stat type="MOVEMENT" value="90" negative="false"/>
+        	<stat type="STAMINA" value="115" negative="false"/>
+        	<stat type="STAMINA_REGEN" value="90" negative="false"/>
+        	<stat type="SPECIAL" value="100" negative="false"/>
+        	<stat type="SPECIAL_REGEN" value="100" negative="false"/>
+        </statistics>
+        <inventory innateWeapon="1" weapon="2" shield="3">
+        	<items>
+        	</items>
+        	<armor>
+        		<protection slot="TORSO" id="11"/>
+        	</armor>
+        </inventory>
+        <spells>
+        </spells>
+        <graphics>
+	        <simple>
+	            <motion type="IDLE" id="10"/>
+	        	<motion type="WALK" id="11" sound="data/sound/footstep.ogg"/>
+	        	<motion type="HURT" id="12"/>
+	        	<motion type="BLOCK_IDLE" id="14"/>
+	        	<motion type="BLOCK_WALK" id="15"/>
+	        </simple>
+	        <attack>
+	        	<motion type="MELEE" id="13" sound="data/sound/slash.ogg"/>
+	        </attack>
+        </graphics>
+    </creature>    
+    
+</database>
+    

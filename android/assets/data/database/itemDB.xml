@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	item
+		Attributes
+			type: ItemType
+			name: int
+			descr: int
+			weight: float, optional (default: 0)
+			slot: ProtectionSlot (only for protection)
+		Children
+			body
+				(custom rule)
+			attacks (only for weapon)
+				Attributes
+				Children
+					attack
+						Attributes
+							type: AttackType
+							style: AttackMotionType
+							level: BlockLevel
+							crushPower: float
+							dash: float
+							speed: float
+							charge: float
+							HBwidth: int
+							HBlength: int
+							targets: int
+							cost: float
+						Children
+							damages (optional)
+								Children
+									damage
+										(custom rule)
+							effects (optional)
+								Children
+									effect
+										(custom rule)
+							knockback (optional)
+								(custom rule)
+							spawner (optional)
+								(custom rule)
+			blocks (only for weapon, shield)
+				Attributes
+				Children
+					block
+						Attributes
+							type: BlockType
+							style: BlockMotionType
+							crushResist: float
+							speed: float
+							HBwidth: int
+							HBlength: int
+							cost: float                  		                    		
+-->
+<database>
+
+	<item id="0" label="Money" type="STANDARD" name="10000" descr="10001">
+	</item>
+
+	<item id="1" label="Punch" type="WEAPON" name="10002" descr="10003" weight="0">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="0" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="0" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="0" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+   		<attacks>
+    		<attack type="WEAK" style="MELEE" level="WEAPON" crushPower="0.1" dash="0" speed="1" HBwidth="25" HBlength="25" targets="1" cost="5" charge="0">
+    			<damages>
+    				<damage type="PHYSICAL" power="0" variation="0.2">
+    					<scaling stat="STRENGTH" ratio="0.15"/>
+    				</damage>
+    			</damages>
+    		</attack>		
+   		</attacks> 			
+   		<blocks>
+   		</blocks> 			
+    </item>
+	
+    <item id="2" label="Sword" type="WEAPON" name="10004" descr="10005" weight="2.5">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="20" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="0" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="0" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+   		<attacks>
+    		<attack type="WEAK" style="MELEE" level="WEAPON" crushPower="1" dash="15" speed="1" HBwidth="45" HBlength="60" targets="2" cost="15" charge="0">
+    			<damages>
+    				<damage type="PHYSICAL" power="20" variation="0.1">
+    					<scaling stat="STRENGTH" ratio="0.2"/>
+    				</damage>
+    			</damages>
+    		</attack>		
+   		</attacks> 			
+   		<blocks>
+   		</blocks> 			
+    </item>
+    
+    <item id="3" label="Shield" type="SHIELD" name="10006" descr="10007" weight="4">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="50" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0.6" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="10" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="20" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0.2" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="5" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="10" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+   		<blocks>
+   			<block type="STANDARD" style="SHIELD" crushResist="3" speed="1" HBwidth="50" HBlength="30" cost="2"/>
+   		</blocks> 	
+    </item>
+
+    <item id="4" label="Chainmail enchanted" type="PROTECTION" slot="TORSO" name="10008" descr="10009" weight="15">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="115" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0.34" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="8" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="11" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0.17" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="4" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="7" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+    </item>
+    
+    <item id="5" label="Dagger" type="WEAPON" name="10010" descr="10011" weight="1">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="20" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="0" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="0" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+   		<attacks>
+    		<attack type="WEAK" style="MELEE" level="WEAPON" crushPower="0.7" dash="15" speed="1.1" HBwidth="35" HBlength="35" targets="1" cost="9" charge="0">
+    			<damages>
+    				<damage type="PHYSICAL" power="15" variation="0.1" armorPen="0.25">
+    					<scaling stat="STRENGTH" ratio="0.1"/>
+    				</damage>
+    			</damages>
+    		</attack>		
+   		</attacks> 			
+   		<blocks>
+   		</blocks> 			
+    </item>
+    
+    <item id="6" label="Bow" type="WEAPON" name="10012" descr="10013" weight="3">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="20" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="0" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="0" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+   		<attacks>
+    		<attack type="WEAK" style="RANGED" level="WEAPON" crushPower="0" dash="0" speed="1" HBwidth="10" HBlength="10" targets="0" cost="18" charge="0">
+		    	<spawner type="PROJECTILE" projectile="0" speed="200" range="600" block="SHIELD" crushPower="0.75" rounds="1" interval="0" amount="1">
+				    <damages>
+						<damage type="PHYSICAL" power="25" variation="0.1" armorPen="0.5">
+							<scaling stat="STRENGTH" ratio="0.15"/>
+						</damage>
+					</damages>
+		    	</spawner>
+    		</attack>		
+   		</attacks> 			
+   		<blocks>
+   		</blocks> 			
+    </item>
+    
+    <item id="7" label="Spear" type="WEAPON" name="10014" descr="10015" weight="3">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="20" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="0" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="0" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="0" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="0" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+   		<attacks>
+    		<attack type="WEAK" style="MELEE" level="WEAPON" crushPower="0.85" dash="20" speed="1" HBwidth="25" HBlength="35" targets="1" cost="15" charge="0">
+    			<damages>
+    				<damage type="PHYSICAL" power="20" variation="0.1" armorPen="0.25">
+    					<scaling stat="STRENGTH" ratio="0.15"/>
+    				</damage>
+    			</damages>
+    		</attack>		
+   		</attacks> 			
+   		<blocks>
+   		</blocks> 			
+    </item>
+    
+    <item id="8" label="Cloth armor" type="PROTECTION" slot="TORSO" name="10016" descr="10017" weight="5">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="40" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0.1" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="3" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="5" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0.05" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="1.5" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="3" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+    </item>
+    
+    <item id="9" label="Leather armor" type="PROTECTION" slot="TORSO" name="10018" descr="10019" weight="10">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="70" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0.2" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="5" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="8" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0.1" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="2.5" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="5" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+    </item>
+    
+     <item id="10" label="Chainmail" type="PROTECTION" slot="TORSO" name="10020" descr="10021" weight="15">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="100" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0.3" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="7" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="10" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0.15" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="3.5" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="6.5" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+    </item>
+    
+    <item id="11" label="Plate armor" type="PROTECTION" slot="TORSO" name="10022" descr="10023" weight="20">
+    	<body>
+	        <stats>
+	        	<stat type="HP" value="150" variation="0" negative="false"/>
+	        </stats>
+	        <defences>
+	    		<stat type="RESISTANCE_PHYSICAL" value="0.4" negative="true"/>
+	    		<stat type="REDUCTION_PHYSICAL" value="9" negative="true"/>
+	    		<stat type="SOAK_PHYSICAL" value="13" negative="false"/>
+	    		<stat type="RESISTANCE_ELEMENTAL" value="0.2" negative="true"/>
+	    		<stat type="REDUCTION_ELEMENTAL" value="4.5" negative="true"/>
+	    		<stat type="SOAK_ELEMENTAL" value="8.5" negative="false"/>
+	        </defences>
+	        <immunities>
+	        	<immunity type="PARALYZE"/>
+	        </immunities>
+        </body>
+    </item>
+
+</database>

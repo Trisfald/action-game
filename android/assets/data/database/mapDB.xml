@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INSTRUCTIONS
+	map
+		Attributes
+			label: String
+			path: String, name of the tiled generated map + extension(.tmx)
+			indoor: boolean, optional (default: false)
+			illumination: String, optional (default: WHITE)
+		Children
+			links
+				Children
+					link
+						Fields
+							direction: Direction
+							destination: int
+			meteo
+				Children
+					weather
+						Fields
+							type: WeatherType
+							probability: float
+						
+-->
+<database>
+    <map id="0" name="0" path="0.tmx" illumination="ambient.dungeon">
+    	<links>
+    		<link direction="UPPER_RIGHT" destination="2"/>
+			<link direction="RIGHT" destination="1"/>
+    	</links>
+    	<meteo>
+    		<weather type="SUNNY" probability="1"/>
+    	</meteo>
+    </map>
+    <map id="1" name="1" path="1.tmx" illumination="ambient.dungeon">
+    	<links>
+    		<link direction="LEFT" destination="0"/>
+    		<link direction="UP" destination="2"/>
+    	</links>
+    	<meteo>
+    		<weather type="SUNNY" probability="1"/>
+    	</meteo>
+    </map>
+    <map id="2" label="2" path="2.tmx" illumination="ambient.dungeon">
+		<links>
+			<link direction="DOWN" destination="1"/>
+			<link direction="DOWN_LEFT" destination="0"/>
+		</links>
+		<meteo>
+    		<weather type="SUNNY" probability="1"/>
+    	</meteo>
+    </map>
+</database>
+    
